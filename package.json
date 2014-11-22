@@ -1,0 +1,30 @@
+{
+  "name": "ode",
+  "version": "0.0.1",
+  "description": "Zero overhead CLI adapter for Node",
+  "main": "ode.js",
+  "scripts": {
+    "test": "washington ode.js"
+  },
+  "bin": {
+    "ode": "./bin/ode"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xaviervia/ode"
+  },
+  "keywords": [
+    "cli",
+    "commandline"
+  ],
+  "author": "Xavier Via <fernando.via@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xaviervia/ode/issues"
+  },
+  "homepage": "https://github.com/xaviervia/ode",
+  "dependencies": {
+    "washington": "^0.7.0",
+    "coffee-script": "^1.8.0"
+  }
+}
