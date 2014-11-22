@@ -49,8 +49,9 @@
 //
 "use strict"
 
-var example = require('washington')
-var assert  = require('assert')
+var example   = require('washington')
+var assert    = require('assert')
+var metadata  = require('./package')
 
 require('coffee-script/register')
 
@@ -58,6 +59,9 @@ var Ode = function (argv, callback, req, cwd) {
   var libraryName, library, options = {}
 
   argv = argv || process.argv
+
+  if (argv.indexOf("-v") !== -1)
+    return console.log(metadata.version)
 
   argv.forEach(function (arg) {
     if (arg.match(/^--([a-zA-Z]+)=(.+)$/))
@@ -141,6 +145,19 @@ example('Returns the result value from the callback when provided', function () 
 
   //! THEN
   assert.equal(result, "Mister X")
+})
+
+example('Shows only the version number when flag -v is sent', function () {
+  //! GIVEN
+  var temp = { log: console.log }
+  console.log = function () { console.log.args = arguments }
+
+  //! WHEN
+  Ode(["-v"])
+
+  //! THEN
+  assert.equal(console.log.args[0], metadata.version)
+  console.log = temp.log
 })
 
 module.exports = Ode
