@@ -32,6 +32,13 @@
 // npm install -g ode
 // ```
 //
+// CoffeeScript
+// ------------
+//
+// Because it is so widespread, **Ode** comes with support for CoffeeScript out
+// of the box. If you want to use another dialect/transpiler, please pull
+// request.
+//
 "use strict"
 
 var example = require('washington')
