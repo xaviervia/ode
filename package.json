@@ -1,7 +1,7 @@
 {
   "name": "ode",
   "version": "0.0.2",
-  "description": "Zero overhead CLI adapter for Node",
+  "description": "Zero overhead CLI adapter for Node modules",
   "main": "ode.js",
   "scripts": {
     "test": "washington ode.js"

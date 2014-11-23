@@ -3,7 +3,7 @@
 //
 // [ ![Codeship Status for xaviervia/ode](https://codeship.com/projects/aa905470-5471-0132-8879-6274f9eea671/status)](https://codeship.com/projects/49197)
 //
-// Zero overhead CLI adapter for Node.
+// Zero overhead CLI adapter for Node modules.
 //
 // ```javascript
 // // greeter.js
