@@ -1,6 +1,6 @@
 {
   "name": "ode",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Zero overhead CLI adapter for Node modules",
   "main": "ode.js",
   "scripts": {
